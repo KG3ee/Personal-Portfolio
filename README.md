@@ -19,7 +19,7 @@ A modern, responsive personal portfolio website showcasing my projects and skill
 - CSS3 (with responsive media queries)
 - Flexbox layout
 - Font Awesome icons
-- Google Fonts (Poppins, Roboto)
+- Google Fonts (Sora for headings, DM Sans for body)
 
 ### Projects Featured
 - **Python** - Punch Bot (automation)
@@ -90,8 +90,8 @@ Professional admin dashboard panel with responsive layout designed for data visu
 ## 🎨 Design Highlights
 
 - **Color Scheme**: Navy (#0d1b2a), Dark Blue (#1b263b), Steel Blue (#415a77), and Bright Cyan (#00d9ff)
-- **Typography**: Poppins and Roboto fonts for modern aesthetic
-- **Animations**: Smooth hover effects and transitions
+- **Typography**: Sora (headings - modern, geometric) and DM Sans (body - professional, clean)
+- **Animations**: Smooth hover effects, scroll animations, and transitions
 - **Accessibility**: Semantic HTML and proper contrast ratios
 
 ## 📈 Future Enhancements
@@ -110,4 +110,5 @@ Feel free to reach out for collaboration or job opportunities!
 ---
 
 **Created**: January 2026  
-**Last Updated**: January 2026
+**Last Updated**: January 26, 2026
+**Font Design**: Premium & Elegant (Sora + DM Sans)
