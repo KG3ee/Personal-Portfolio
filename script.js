@@ -52,17 +52,7 @@ projectLinks.forEach(link => {
     });
 });
 
-// Animate skill tags on hover
-const skillTags = document.querySelectorAll('.skill-tag');
-skillTags.forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.1)';
-        this.style.transition = 'transform 0.2s ease';
-    });
-    tag.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-    });
-});
+// Animate skill tags on hover - REMOVED (handled in CSS)
 
 // Page load animation
 window.addEventListener('load', () => {
@@ -82,9 +72,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Smooth color transition on nav link active state
+// Smooth color transition on nav link active state with throttling
 const navLinks = document.querySelectorAll('.navLink');
-window.addEventListener('scroll', () => {
+let scrollTimeout;
+
+const updateNavHighlight = () => {
     let current = '';
     const sections = document.querySelectorAll('section, footer');
     
@@ -101,22 +93,16 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+};
+
+window.addEventListener('scroll', () => {
+    if (scrollTimeout) {
+        window.cancelAnimationFrame(scrollTimeout);
+    }
+    scrollTimeout = window.requestAnimationFrame(updateNavHighlight);
 });
 
-// Contact box animation
-const contactBoxes = document.querySelectorAll('.contact-links .box');
-contactBoxes.forEach((box, index) => {
-    box.style.animationDelay = `${index * 0.1}s`;
-    box.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
-        this.style.boxShadow = '0 10px 25px rgba(0, 217, 255, 0.3)';
-        this.style.transition = 'all 0.3s ease';
-    });
-    box.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-        this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.3)';
-    });
-});
+// Contact box animations - REMOVED (handled in CSS)
 
 // Mobile menu toggle (if you add a mobile menu later)
 const hamburger = document.querySelector('.hamburger');
@@ -161,3 +147,21 @@ const createProgressBar = () => {
 };
 
 createProgressBar();
+
+// Back to Top Button
+const backToTopBtn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
