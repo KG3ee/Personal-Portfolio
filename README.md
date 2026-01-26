@@ -61,7 +61,7 @@ Simply open `index.html` in your web browser to view the portfolio.
 - **GitHub**: [John-myint](https://github.com/John-myint)
 - **Email**: kyawlaymyint94.mdy@gmail.com
 - **Facebook**: [kyawlay.myint.12](https://www.facebook.com/kyawlay.myint.12)
-- **Twitter**: [@KyawLayMyint1](https://twitter.com/KyawLayMyint1)
+- **Twitter**: [@KyawLayMyint1](https://x.com/KyawLayMyint1)
 - **Telegram**: [@king_alexander94](https://t.me/king_alexander94)
 
 ## 💡 Featured Projects
