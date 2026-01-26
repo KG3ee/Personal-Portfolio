@@ -1,0 +1,362 @@
+/* Modern animations and smooth effects */
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(0, 217, 255, 0.5);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Apply animations */
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.7s ease forwards;
+}
+
+.slide-down {
+    animation: slideDown 0.6s ease forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.6s ease forwards;
+}
+
+/* Project container enhancements */
+.projectContainer {
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+
+.projectContainer:hover::before {
+    left: 100%;
+}
+
+.projectContainer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 217, 255, 0.25);
+}
+
+/* Skill cards smooth transitions */
+.skill-card {
+    opacity: 0;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 217, 255, 0.2);
+}
+
+/* Project link hover effects */
+.project-link {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.project-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00d9ff, #1b263b);
+    transition: width 0.3s ease;
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+/* Skill tags animations */
+.skill-tag {
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background-color: #00d9ff;
+    color: #0d1b2a;
+    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+}
+
+/* Nav links active state */
+.navLink {
+    position: relative;
+    transition: all 0.3s ease;
+    color: var(--white);
+}
+
+.navLink::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--mint);
+    transition: width 0.3s ease;
+}
+
+.navLink:hover::before,
+.navLink.active::before {
+    width: 100%;
+}
+
+.navLink:hover,
+.navLink.active {
+    color: var(--mint);
+}
+
+/* Contact boxes */
+.contact-links .box {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-links .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.15), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-links .box:hover::before {
+    left: 100%;
+}
+
+.contact-links .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 217, 255, 0.3);
+}
+
+/* Hero section smooth effects */
+.hero {
+    position: relative;
+    will-change: transform;
+    transition: all 0.3s ease;
+}
+
+.hero-title {
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero-subtitle {
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.cta-button {
+    animation: fadeInUp 0.8s ease 0.6s both;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+/* Smooth scrollbar styling for better UX */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mint);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00c4cc;
+}
+
+/* Section animations */
+section {
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/* About me section */
+.aboutMe {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.aboutMe h1 {
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.aboutMe p {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.aboutMe p:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.aboutMe p:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.aboutMe p:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.aboutMe p:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Header animations */
+.header {
+    animation: slideDown 0.6s ease;
+}
+
+/* Stagger animation for skills */
+.skill-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.skill-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.skill-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Contact footer animations */
+.contact {
+    animation: fadeIn 0.8s ease;
+}
+
+.contact h2 {
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+    .project-link,
+    .cta-button,
+    .navLink {
+        padding: 10px;
+    }
+
+    .projectContainer:hover {
+        transform: translateY(-5px);
+    }
+
+    .contact-links .box:hover {
+        transform: translateY(-3px);
+    }
+}
