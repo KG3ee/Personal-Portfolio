@@ -8,12 +8,12 @@ html {
 }
 
 :root {
-    --navy: #04364A;
-    --teal: #176B87;
-    --mint: #64CCC5;
-    --soft: #DAFFFB;
+    --navy: #0d1b2a;
+    --teal: #1b263b;
+    --mint: #00d9ff;
+    --soft: #415a77;
     --white: #fff;
-    --black: rgb(33, 22, 22);
+    --black: #0a0e27;
 }
 
 body {

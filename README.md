@@ -86,7 +86,7 @@ Professional admin dashboard panel with responsive layout designed for data visu
 
 ## 🎨 Design Highlights
 
-- **Color Scheme**: Navy, Teal, Mint, and Soft White
+- **Color Scheme**: Navy (#0d1b2a), Dark Blue (#1b263b), Steel Blue (#415a77), and Bright Cyan (#00d9ff)
 - **Typography**: Poppins and Roboto fonts for modern aesthetic
 - **Animations**: Smooth hover effects and transitions
 - **Accessibility**: Semantic HTML and proper contrast ratios
