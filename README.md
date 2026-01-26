@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website showcasing my projects and skill
 
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 - **Modern UI** - Clean and professional design with smooth animations
-- **Project Showcase** - Display of 6 diverse projects with technology stacks
+- **Project Showcase** - Display of 7 diverse projects with technology stacks
 - **Skills Section** - Categorized skills in Frontend, Backend, and Tools
 - **Contact Links** - Direct links to email, GitHub, social media, and messaging platforms
 - **Smooth Navigation** - Smooth scrolling between sections
@@ -23,7 +23,7 @@ A modern, responsive personal portfolio website showcasing my projects and skill
 
 ### Projects Featured
 - **Python** - Punch Bot (automation)
-- **JavaScript** - Expense Tracker, Photo Gallery, Weather App, Calculator
+- **JavaScript** - Punch Bot JS, Expense Tracker, Photo Gallery, Weather App, Calculator
 - **HTML/CSS** - Admin Dashboard
 
 ## 📁 Project Structure
@@ -41,7 +41,7 @@ Personal Portfolio/
 1. **Header** - Navigation with profile image and name
 2. **Hero Section** - Tagline and call-to-action button
 3. **Skills Section** - Categorized technical skills
-4. **Projects Section** - Six featured projects with descriptions and GitHub links
+4. **Projects Section** - Seven featured projects with descriptions and GitHub links
 5. **About Me** - Professional bio and introduction
 6. **Contact Footer** - Social links and contact options
 
@@ -68,6 +68,9 @@ Simply open `index.html` in your web browser to view the portfolio.
 
 ### Punch Bot
 An interactive bot application built with Python featuring command processing and automation capabilities.
+
+### Punch Bot JS
+A JavaScript version of Punch Bot with enhanced web integration, interactive command processing and web-based automation capabilities.
 
 ### Expense Tracker
 A full-featured expense tracking application with categorization and spending analysis.
