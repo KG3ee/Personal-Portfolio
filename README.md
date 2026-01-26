@@ -90,7 +90,7 @@ Professional admin dashboard panel with responsive layout designed for data visu
 ## 🎨 Design Highlights
 
 - **Color Scheme**: Navy (#0d1b2a), Dark Blue (#1b263b), Steel Blue (#415a77), and Bright Cyan (#00d9ff)
-- **Typography**: Sora (headings - modern, geometric) and DM Sans (body - professional, clean)
+- **Typography**: Sora (headings - modern, geometric), DM Sans (body - professional, clean), Lora (descriptions - elegant, premium serif)
 - **Animations**: Smooth hover effects, scroll animations, and transitions
 - **Accessibility**: Semantic HTML and proper contrast ratios
 
