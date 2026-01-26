@@ -252,18 +252,19 @@ main {
 .project-link {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: var(--navy);
-    color: var(--white);
-    border-radius: 5px;
+    padding: 10px 16px;
+    background: transparent;
+    color: #00d9ff;
+    border: 2px solid #00d9ff;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .project-link:hover {
-    background-color: var(--teal);
-    color: var(--navy);
+    background-color: transparent;
+    color: #00d9ff;
 }
 
 .projectContainer {
@@ -620,8 +621,9 @@ main {
     }
 
     .project-link {
-        padding: 8px 16px;
-        font-size: 13px;
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 6px;
     }
 
     .section-title {
