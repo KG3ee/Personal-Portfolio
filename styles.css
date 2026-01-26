@@ -86,6 +86,7 @@ main {
     background-color: var(--mint);
     border-radius: 5px;
     transition-duration: 0.5s;
+    color: black;
 }
 
 .profile_img {
