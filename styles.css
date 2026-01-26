@@ -3,6 +3,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --navy: #04364A;
     --teal: #176B87;
@@ -68,6 +72,7 @@ main {
     font-weight: bolder;
     padding: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navLink:hover {
@@ -89,11 +94,109 @@ main {
     font-weight: bolder;
 }
 
+.hero {
+    width: 100%;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-title {
+    font-size: 60px;
+    color: var(--white);
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--soft);
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--mint);
+    color: var(--navy);
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(100, 204, 197, 0.3);
+}
+
+.skills {
+    width: 100%;
+    background-color: var(--navy);
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skill-card {
+    background-color: var(--teal);
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: var(--mint);
+    color: var(--navy);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
 .projects {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
     flex-wrap: wrap;
+    padding: 60px 0;
 }
 
 .section-title {
@@ -177,11 +280,20 @@ main {
 
 .contact {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
-    height: 100px;
     background-color: var(--navy);
     align-items: center;
+    padding: 60px 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .box {
@@ -189,41 +301,64 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
     cursor: pointer;
-    padding: 30px;
 }
 
 .box > a {
     color: var(--white);
-    padding: 30px;
+    padding: 20px 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .box > a:hover {
-    color: var(--black);
+    color: var(--navy);
     background-color: var(--mint);
-    padding: 30px;
-    border-radius: 5px;
-    transition-duration: 0.3s;
+    transform: scale(1.05);
 }
 
 .aboutMe {
     width: 60%;
+    padding: 80px 40px;
+    text-align: center;
 }
 
 .aboutMe > h1 {
     font-size: 60px;
     color: var(--white);
     font-weight: bolder;
+    margin-bottom: 40px;
 }
 
 .aboutMe > p {
-    font-size: 30px;
+    font-size: 18px;
     color: var(--white);
     font-family: 'Roboto', sans-serif;
-    font-style: italic;
+    line-height: 1.8;
+    margin: 20px 0;
 }
 
 /* Tablet devices (768px to 1024px) */
 @media (max-width: 1024px) {
+    .hero-title {
+        font-size: 45px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        gap: 20px;
+    }
+
+    .skill-card {
+        min-width: 200px;
+        padding: 20px;
+    }
+
     .projectContainer {
         min-width: 350px;
         margin: 60px 30px;
@@ -251,7 +386,7 @@ main {
     }
 
     .aboutMe > p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .section-title {
@@ -261,6 +396,29 @@ main {
 
 /* Mobile devices (max 768px) */
 @media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
     .header {
         height: auto;
         flex-direction: column;
@@ -335,6 +493,11 @@ main {
         padding: 20px 10px;
     }
 
+    .contact-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .box {
         font-size: 18px;
         padding: 15px;
@@ -347,7 +510,7 @@ main {
 
     .aboutMe {
         width: 90%;
-        padding: 0 15px;
+        padding: 40px 15px;
     }
 
     .aboutMe > h1 {
@@ -356,13 +519,44 @@ main {
     }
 
     .aboutMe > p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 15px;
     }
 }
 
 /* Extra small devices (max 480px) */
 @media (max-width: 480px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 20px;
+    }
+
     .header {
         padding: 12px 0;
         gap: 8px;
@@ -426,6 +620,10 @@ main {
         gap: 10px;
     }
 
+    .contact-links {
+        gap: 10px;
+    }
+
     .box {
         font-size: 15px;
         padding: 10px;
@@ -438,11 +636,12 @@ main {
         flex-direction: column;
         align-items: center;
         gap: 5px;
+        font-size: 12px;
     }
 
     .aboutMe {
         width: 95%;
-        padding: 0 10px;
+        padding: 30px 10px;
     }
 
     .aboutMe > h1 {
