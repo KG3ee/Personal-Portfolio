@@ -190,8 +190,8 @@ main {
 }
 
 .skill-tag {
-    background-color: var(--mint);
-    color: var(--navy);
+    background-color: var(--teal);
+    color: var(--white);
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 13px;
