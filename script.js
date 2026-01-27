@@ -9,21 +9,22 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
+            entry.target.classList.add('reveal');
+            entry.target.classList.add('active');
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe all project containers and skill cards
+// Observe all project cards, skill categories, and about content
 document.addEventListener('DOMContentLoaded', () => {
-    const projectContainers = document.querySelectorAll('.projectContainer');
-    const skillCards = document.querySelectorAll('.skill-card');
-    const sections = document.querySelectorAll('section');
+    const projectCards = document.querySelectorAll('.project-card');
+    const skillCategories = document.querySelectorAll('.skill-category');
+    const aboutContent = document.querySelector('.about-content');
 
-    projectContainers.forEach(el => observer.observe(el));
-    skillCards.forEach(el => observer.observe(el));
-    sections.forEach(el => observer.observe(el));
+    projectCards.forEach(el => observer.observe(el));
+    skillCategories.forEach(el => observer.observe(el));
+    if (aboutContent) observer.observe(aboutContent);
 });
 
 // Smooth scroll behavior enhancement
@@ -56,11 +57,11 @@ projectLinks.forEach(link => {
 
 // Page load animation
 window.addEventListener('load', () => {
-    const header = document.querySelector('.header');
-    const hero = document.querySelector('.hero');
+    const navbar = document.querySelector('.navbar');
+    const heroContent = document.querySelector('.hero-content');
     
-    if (header) header.classList.add('slide-down');
-    if (hero) hero.classList.add('fade-in-up');
+    if (navbar) navbar.style.animation = 'fadeInDown 0.6s ease';
+    if (heroContent) heroContent.style.animation = 'fadeInUp 0.8s ease';
 });
 
 // Add parallax effect to hero section
@@ -73,12 +74,12 @@ window.addEventListener('scroll', () => {
 });
 
 // Smooth color transition on nav link active state with throttling
-const navLinks = document.querySelectorAll('.navLink');
+const navLinks = document.querySelectorAll('.nav-link');
 let scrollTimeout;
 
 const updateNavHighlight = () => {
     let current = '';
-    const sections = document.querySelectorAll('section, footer');
+    const sections = document.querySelectorAll('section');
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -106,7 +107,7 @@ window.addEventListener('scroll', () => {
 
 // Mobile menu toggle (if you add a mobile menu later)
 const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.headerRight');
+const navMenu = document.querySelector('.nav-menu');
 
 if (hamburger) {
     hamburger.addEventListener('click', () => {
