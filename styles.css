@@ -627,14 +627,14 @@ section {
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
-.thumb-python   { background: linear-gradient(135deg, #667eea, #764ba2); }
-.thumb-js       { background: linear-gradient(135deg, #2196F3, #21CBF3); }
-.thumb-fullstack{ background: linear-gradient(135deg, #11998e, #38ef7d); }
-.thumb-gallery  { background: linear-gradient(135deg, #ee0979, #ff6a00); }
-.thumb-weather  { background: linear-gradient(135deg, #F7971E, #FFD200); }
-.thumb-calc     { background: linear-gradient(135deg, #00b4db, #0083b0); }
-.thumb-ui       { background: linear-gradient(135deg, #c31432, #240b36); }
-.thumb-web      { background: linear-gradient(135deg, var(--accent), var(--gold)); }
+.thumb-punch-app { background: linear-gradient(135deg, #0f2027, #2c5364); }
+.thumb-lock      { background: linear-gradient(135deg, #1a2a6c, #b21f1f); }
+.thumb-fullstack { background: linear-gradient(135deg, #11998e, #38ef7d); }
+.thumb-valentine { background: linear-gradient(135deg, #ee0979, #ff6a00); }
+.thumb-weather   { background: linear-gradient(135deg, #F7971E, #FFD200); }
+.thumb-calc      { background: linear-gradient(135deg, #00b4db, #0083b0); }
+.thumb-srt       { background: linear-gradient(135deg, #667eea, #764ba2); }
+.thumb-web       { background: linear-gradient(135deg, var(--accent), var(--gold)); }
 
 .project-body {
     padding: 1.5rem 2rem 2rem;
