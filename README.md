@@ -1,62 +1,94 @@
-# Kyaw Lay Myint - Personal Portfolio
+# Kyaw Lay Myint — Personal Portfolio
 
-A modern, responsive personal portfolio website showcasing my projects and skills as a full-stack developer.
+A modern, responsive personal portfolio website with a premium dark/light theme, scroll-driven animations, and a full-featured contact form.
 
-## 🌟 Features
+## Features
 
-- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
-- **Modern UI** - Clean and professional design with smooth animations
-- **Project Showcase** - Display of 7 diverse projects with technology stacks
-- **Skills Section** - Categorized skills in Frontend, Backend, and Tools
-- **Contact Links** - Direct links to email, GitHub, social media, and messaging platforms
-- **Smooth Navigation** - Smooth scrolling between sections
-- **Semantic HTML** - Properly structured HTML5 markup
+- **Dark / Light Mode** — Toggle with one click; preference saved in localStorage and respects system settings
+- **Responsive Design** — Optimized for desktop, tablet, and mobile with a slide-out hamburger menu
+- **SEO Optimized** — Open Graph, Twitter Card, meta description, semantic HTML5
+- **Accessibility** — Skip-to-content link, ARIA labels, keyboard navigation, `prefers-reduced-motion` support
+- **Project Showcase** — 8 project cards with gradient thumbnails, technology badges, and completion dates
+- **Skills Section** — Animated progress bars that fill on scroll, organized by Frontend / Backend / Tools
+- **About Section** — Profile image with animated stat counters (projects, skills, experience)
+- **Testimonials** — 3 testimonial cards with star ratings
+- **Blog Section** — 3 article preview cards
+- **Contact Form** — Client-side validation with animated submit states (loading → success)
+- **Contact Links** — Email, GitHub, Facebook, Twitter, Telegram
+- **Scroll Progress Bar** — Thin gradient bar at the top of the viewport
+- **Back to Top Button** — Appears after scrolling 300px
+- **Smooth Scroll** — Anchor links scroll smoothly with offset for the fixed navbar
+- **Parallax Hero** — Subtle parallax effect on the hero section
+- **Staggered Animations** — Cards and sections fade in with staggered delays via Intersection Observer
 
-## 🛠️ Technologies Used
+## Technologies
 
-### Frontend
-- HTML5
-- CSS3 (with responsive media queries)
-- Flexbox layout
-- Font Awesome icons
-- Google Fonts (Sora for headings, DM Sans for body)
+- HTML5 (semantic markup)
+- CSS3 (custom properties, grid, flexbox, `clamp()`, glassmorphism, media queries)
+- Vanilla JavaScript (ES6+, Intersection Observer, localStorage)
+- Google Fonts (Poppins + Space Mono)
+- Font Awesome 6
 
-### Projects Featured
-- **Python** - Punch Bot (automation)
-- **JavaScript** - Punch Bot JS, Expense Tracker, Photo Gallery, Weather App, Calculator
-- **HTML/CSS** - Admin Dashboard
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-Personal Portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # Styling and responsive design
-├── README.md           # This file
-└── KyawLayMyintID.png  # Profile image
+Portfolio/
+├── index.html          Main HTML
+├── styles.css          All styles + dark/light themes + responsive
+├── animations.css      Keyframes + scroll-reveal system
+├── script.js           Theme toggle, form validation, animations, menu
+├── KyawLayMyintID.png  Profile image
+├── favicon.svg         SVG favicon
+├── email.svg           Email icon asset
+└── README.md           This file
 ```
 
-## 📄 Sections
+## Sections
 
-1. **Header** - Navigation with profile image and name
-2. **Hero Section** - Tagline and call-to-action button
-3. **Skills Section** - Categorized technical skills
-4. **Projects Section** - Seven featured projects with descriptions and GitHub links
-5. **About Me** - Professional bio and introduction
-6. **Contact Footer** - Social links and contact options
+1. **Navbar** — Fixed glassmorphism header with gradient logo, navigation links, theme toggle, and hamburger menu
+2. **Hero** — Greeting, gradient name, subtitle, two CTA buttons, floating accent circles
+3. **About** — Profile image, bio paragraphs, animated stat counters
+4. **Skills** — 3 categories with animated progress bars
+5. **Projects** — 8 cards with gradient icon thumbnails, dates, descriptions, GitHub links
+6. **Testimonials** — 3 quote cards with star ratings and author info
+7. **Blog** — 3 article preview cards with tags and dates
+8. **Contact** — Form (name, email, subject, message) + social/contact links
+9. **Footer** — 3-column layout (about, quick links, social icons) + copyright
 
-## 🚀 Getting Started
+## Quick Start
 
-Simply open `index.html` in your web browser to view the portfolio.
+Open `index.html` in any modern browser.
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
-- **Desktop** - Full layout (1024px and above)
-- **Tablet** - Optimized layout (768px - 1024px)
-- **Mobile** - Compact layout (up to 768px)
-- **Extra Small** - Minimal layout (up to 480px)
+| Breakpoint | Layout |
+|---|---|
+| 1024px+ | Full 3-column grids, side-by-side contact |
+| 768–1024px | 2-column grids, stacked contact |
+| < 768px | Single column, slide-out mobile menu |
+| < 480px | Compact spacing, full-width buttons |
 
-## 🔗 Links
+## Color Themes
+
+### Dark (default)
+| Token | Value |
+|---|---|
+| Background | `#0a0e27` |
+| Card | `#1a1f2e` |
+| Accent | `#00d9ff` |
+| Gold | `#ffd700` |
+| Text | `#ffffff` / `#b8c5d6` |
+
+### Light
+| Token | Value |
+|---|---|
+| Background | `#f5f7fb` |
+| Card | `#ffffff` |
+| Accent | `#0088bb` |
+| Gold | `#c49400` |
+| Text | `#1a1f2e` / `#5a6577` |
+
+## Links
 
 - **GitHub**: [John-myint](https://github.com/John-myint)
 - **Email**: kyawlaymyint@icloud.com
@@ -64,51 +96,14 @@ Simply open `index.html` in your web browser to view the portfolio.
 - **Twitter**: [@KyawLayMyint1](https://x.com/KyawLayMyint1)
 - **Telegram**: [@king_alexander94](https://t.me/king_alexander94)
 
-## 💡 Featured Projects
+## Browser Support
 
-### Punch Bot
-An interactive bot application built with Python featuring command processing and automation capabilities.
-
-### Punch Bot JS
-A JavaScript version of Punch Bot with enhanced web integration, interactive command processing and web-based automation capabilities.
-
-### Expense Tracker
-A full-featured expense tracking application with categorization and spending analysis.
-
-### Photo Gallery
-A responsive photo gallery with filtering and lightbox features built with modern JavaScript.
-
-### Weather App
-Real-time weather application using weather APIs with current conditions and forecasts.
-
-### Calculator
-A fully functional calculator with a clean UI supporting basic arithmetic operations.
-
-### Admin Dashboard
-Professional admin dashboard panel with responsive layout designed for data visualization.
-
-## 🎨 Design Highlights
-
-- **Color Scheme**: Navy (#0d1b2a), Dark Blue (#1b263b), Steel Blue (#415a77), and Bright Cyan (#00d9ff)
-- **Typography**: Sora (headings - modern, geometric), DM Sans (body - professional, clean), Lora (descriptions - elegant, premium serif)
-- **Animations**: Smooth hover effects, scroll animations, and transitions
-- **Accessibility**: Semantic HTML and proper contrast ratios
-
-## 📈 Future Enhancements
-
-- [ ] Add project preview images/thumbnails
-- [ ] Include live demo links for projects
-- [ ] Add project completion dates
-- [ ] Create a blog section
-- [ ] Add dark/light mode toggle
-- [ ] Implement form validation for contact section
-
-## 📧 Contact
-
-Feel free to reach out for collaboration or job opportunities!
+- Chrome / Edge 90+
+- Firefox 88+
+- Safari 14+
+- iOS Safari, Chrome Mobile
 
 ---
 
-**Created**: January 2026  
-**Last Updated**: January 26, 2026
-**Font Design**: Premium & Elegant (Sora + DM Sans)
+**Created**: January 2026
+**Last Updated**: February 2026

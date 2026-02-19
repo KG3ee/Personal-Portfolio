@@ -1,244 +1,516 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kyaw Lay Myint — Full-Stack Developer building elegant web solutions with HTML, CSS, JavaScript, and Python. View my projects and skills.">
+    <meta name="keywords" content="Kyaw Lay Myint, full-stack developer, web developer, portfolio, JavaScript, Python, HTML, CSS">
+    <meta name="author" content="Kyaw Lay Myint">
+
+    <meta property="og:title" content="Kyaw Lay Myint | Full-Stack Developer">
+    <meta property="og:description" content="Building elegant web solutions with modern technologies. View my projects and skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="KyawLayMyintID.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@KyawLayMyint1">
+    <meta name="twitter:title" content="Kyaw Lay Myint | Full-Stack Developer">
+    <meta name="twitter:description" content="Building elegant web solutions with modern technologies.">
+
     <title>Kyaw Lay Myint | Full-Stack Developer</title>
-    
-    <!-- Favicon -->
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
-    <!-- Stylesheets -->
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
-    
-    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/08cfb9a9c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="navbar">
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar" role="banner">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="#home" class="nav-logo" aria-label="Home">
                 <h1>KLM</h1>
-            </div>
-            <nav class="nav-menu">
+            </a>
+            <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Kyaw Lay Myint</h1>
-            <p class="hero-subtitle">Full-Stack Developer & Creative Problem Solver</p>
-            <p class="hero-description">Building elegant web solutions with modern technologies</p>
-            <a href="#projects" class="cta-button">View My Work</a>
-        </div>
-        <div class="hero-decoration">
-            <div class="accent-circle accent-1"></div>
-            <div class="accent-circle accent-2"></div>
-        </div>
-    </section>
+    <main id="main-content">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate full-stack developer dedicated to creating elegant, user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I transform ideas into reality.</p>
-                <p>I believe in writing clean, maintainable code and continuously evolving my skills. Every project is an opportunity to learn and create something meaningful. My technical expertise spans HTML5, CSS3, JavaScript, Python, and API development.</p>
-                <p>I'm driven by the desire to build applications that make a positive impact. Whether it's creating practical tools or experimenting with new frameworks, I bring enthusiasm and dedication to every project. Let's build something amazing together!</p>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Kyaw Lay Myint</h1>
+                <p class="hero-subtitle">Full-Stack Developer &amp; Creative Problem Solver</p>
+                <p class="hero-description">Building elegant web solutions with modern technologies</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="#contact" class="cta-button cta-outline">Get in Touch</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="accent-circle accent-1"></div>
+                <div class="accent-circle accent-2"></div>
+                <div class="accent-circle accent-3"></div>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS3</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">Responsive Design</span>
-                        <span class="skill-badge">Web Design</span>
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="KyawLayMyintID.png" alt="Kyaw Lay Myint" loading="lazy" width="320" height="320">
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">API Development</span>
-                        <span class="skill-badge">REST APIs</span>
-                        <span class="skill-badge">Database Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-list">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">GitHub</span>
-                        <span class="skill-badge">VS Code</span>
-                        <span class="skill-badge">Problem Solving</span>
+                    <div class="about-text">
+                        <p>I'm a passionate full-stack developer dedicated to creating elegant, user-friendly web applications. With expertise in modern web technologies and a keen eye for design, I transform ideas into reality.</p>
+                        <p>I believe in writing clean, maintainable code and continuously evolving my skills. Every project is an opportunity to learn and create something meaningful.</p>
+                        <p>Whether it's building practical tools, integrating APIs, or crafting responsive interfaces — I bring enthusiasm and dedication to every project.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number" data-target="8">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="10">0</span>
+                                <span class="stat-label">Skills</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number" data-target="1">0</span>
+                                <span class="stat-label">Year Experience</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="section-container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Punch Bot</h3>
-                        <span class="project-badge">Python</span>
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <h2 class="section-title">Skills &amp; Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-category-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Frontend</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>HTML5</span><span>95%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>CSS3</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Responsive Design</span><span>88%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-description">An interactive bot application with advanced command processing and automation capabilities. Features include user-friendly interface and extensive error handling.</p>
-                    <a href="https://github.com/John-myint/Punch-Bot" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Punch Bot JS</h3>
-                        <span class="project-badge">JavaScript</span>
+                    <div class="skill-category">
+                        <div class="skill-category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>REST APIs</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>API Development</span><span>78%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Database Design</span><span>72%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="72"></div></div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-description">JavaScript version with enhanced web integration and interactive features. Built with modern ES6+ syntax for better performance and maintainability.</p>
-                    <a href="https://github.com/John-myint/Punch-Bot-JS" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Expense Tracker</h3>
-                        <span class="project-badge">Full-Stack</span>
+                    <div class="skill-category">
+                        <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools &amp; Others</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Git &amp; GitHub</span><span>88%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>VS Code</span><span>92%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Problem Solving</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Web Design</span><span>82%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="project-description">Track, categorize, and analyze spending habits with an intuitive interface. Features real-time calculations and visual spending insights.</p>
-                    <a href="https://github.com/John-myint/expense-tracker" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Photo Gallery</h3>
-                        <span class="project-badge">JavaScript</span>
-                    </div>
-                    <p class="project-description">Responsive gallery with advanced filtering and smooth lightbox transitions. Optimized for all devices with lazy loading support.</p>
-                    <a href="https://github.com/John-myint/Photo-Gallery" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Weather App</h3>
-                        <span class="project-badge">API</span>
-                    </div>
-                    <p class="project-description">Real-time weather application with forecasts for any location worldwide. Integrated with modern weather APIs for accurate and up-to-date information.</p>
-                    <a href="https://github.com/John-myint/Weather-App" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Calculator</h3>
-                        <span class="project-badge">JavaScript</span>
-                    </div>
-                    <p class="project-description">Fully functional calculator with clean UI supporting basic and advanced arithmetic operations. Includes keyboard input support for enhanced usability.</p>
-                    <a href="https://github.com/John-myint/Calculator" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Admin Dashboard</h3>
-                        <span class="project-badge">UI/UX</span>
-                    </div>
-                    <p class="project-description">Professional dashboard panel with responsive layout for data visualization. Features intuitive controls and comprehensive analytics display.</p>
-                    <a href="https://github.com/John-myint/AdminDashboardPannel" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Personal Portfolio</h3>
-                        <span class="project-badge">Web Design</span>
-                    </div>
-                    <p class="project-description">Modern portfolio website showcasing projects and skills with premium black theme. Built with semantic HTML, advanced CSS animations, and responsive design.</p>
-                    <a href="https://github.com/John-myint" class="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">Have a project in mind? Let's collaborate and build something amazing together</p>
-            <div class="contact-links">
-                <a href="mailto:kyawlaymyint@icloud.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://www.facebook.com/kyawlay.myint.12" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-                <a href="https://github.com/John-myint" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://x.com/KyawLayMyint1" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-x-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                <a href="https://t.me/king_alexander94" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram</span>
-                </a>
+        <!-- Projects -->
+        <section id="projects" class="projects">
+            <div class="section-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-python"><i class="fas fa-robot"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Punch Bot</h3>
+                                <span class="project-badge">Python</span>
+                            </div>
+                            <time class="project-date" datetime="2025-12">Dec 2025</time>
+                            <p class="project-description">An interactive bot application with advanced command processing and automation capabilities. Features user-friendly interface and extensive error handling.</p>
+                            <a href="https://github.com/John-myint/Punch-Bot" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-js"><i class="fas fa-code"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Punch Bot JS</h3>
+                                <span class="project-badge">JavaScript</span>
+                            </div>
+                            <time class="project-date" datetime="2025-12">Dec 2025</time>
+                            <p class="project-description">JavaScript version with enhanced web integration and interactive features. Built with modern ES6+ syntax for better performance and maintainability.</p>
+                            <a href="https://github.com/John-myint/Punch-Bot-JS" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-fullstack"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Expense Tracker</h3>
+                                <span class="project-badge">Full-Stack</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Track, categorize, and analyze spending habits with an intuitive interface. Features real-time calculations and visual spending insights.</p>
+                            <a href="https://github.com/John-myint/expense-tracker" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-gallery"><i class="fas fa-images"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Photo Gallery</h3>
+                                <span class="project-badge">JavaScript</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Responsive gallery with advanced filtering and smooth lightbox transitions. Optimized for all devices with lazy loading support.</p>
+                            <a href="https://github.com/John-myint/Photo-Gallery" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-weather"><i class="fas fa-cloud-sun"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Weather App</h3>
+                                <span class="project-badge">API</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Real-time weather application with forecasts for any location worldwide. Integrated with modern weather APIs for accurate, up-to-date information.</p>
+                            <a href="https://github.com/John-myint/Weather-App" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-calc"><i class="fas fa-calculator"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Calculator</h3>
+                                <span class="project-badge">JavaScript</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Fully functional calculator with clean UI supporting basic and advanced arithmetic operations. Includes keyboard input support for enhanced usability.</p>
+                            <a href="https://github.com/John-myint/Calculator" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-ui"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Admin Dashboard</h3>
+                                <span class="project-badge">UI/UX</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Professional dashboard panel with responsive layout for data visualization. Features intuitive controls and comprehensive analytics display.</p>
+                            <a href="https://github.com/John-myint/AdminDashboardPannel" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-thumbnail thumb-web"><i class="fas fa-laptop-code"></i></div>
+                        <div class="project-body">
+                            <div class="project-header">
+                                <h3>Personal Portfolio</h3>
+                                <span class="project-badge">Web Design</span>
+                            </div>
+                            <time class="project-date" datetime="2026-01">Jan 2026</time>
+                            <p class="project-description">Modern portfolio website showcasing projects and skills with premium themes, dark/light mode, and scroll-driven animations.</p>
+                            <a href="https://github.com/KG3ee/Personal-Portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                                View on GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="section-container">
+                <h2 class="section-title">What People Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"Working with Kyaw was a great experience. His attention to detail and problem-solving skills are impressive. Every line of code is clean and purposeful."</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Alex Chen</strong>
+                                <span>Fellow Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"Kyaw delivered exactly what we needed. Clean code, great communication, and always on time. A reliable developer you can count on."</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Sarah Kim</strong>
+                                <span>Project Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"His portfolio projects showcase real skill and creativity. A developer who truly cares about the craft and keeps pushing his limits."</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>David Park</strong>
+                                <span>Tech Mentor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="blog">
+            <div class="section-container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-thumbnail blog-thumb-1"><i class="fas fa-plug"></i></div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <time datetime="2026-01-15"><i class="far fa-calendar-alt"></i> Jan 15, 2026</time>
+                                <span class="blog-tag">Backend</span>
+                            </div>
+                            <h3>Getting Started with REST API Development</h3>
+                            <p>Explore the fundamentals of building RESTful APIs, from designing endpoints to handling authentication and error responses.</p>
+                            <span class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-thumbnail blog-thumb-2"><i class="fas fa-th-large"></i></div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <time datetime="2026-02-01"><i class="far fa-calendar-alt"></i> Feb 1, 2026</time>
+                                <span class="blog-tag">CSS</span>
+                            </div>
+                            <h3>CSS Grid vs Flexbox: When to Use Which</h3>
+                            <p>A practical guide to choosing the right CSS layout tool for your project, with real-world examples and performance tips.</p>
+                            <span class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-thumbnail blog-thumb-3"><i class="fas fa-robot"></i></div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <time datetime="2026-02-10"><i class="far fa-calendar-alt"></i> Feb 10, 2026</time>
+                                <span class="blog-tag">Python</span>
+                            </div>
+                            <h3>Python Automation: Building My First Bot</h3>
+                            <p>Lessons learned from building Punch Bot — from initial concept to handling edge cases and deploying a robust automation tool.</p>
+                            <span class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-subtitle">Have a project in mind? Let's collaborate and build something amazing together.</p>
+                <div class="contact-grid">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project idea, collaboration, etc.">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loading" hidden><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                            <span class="submit-success" hidden><i class="fas fa-check"></i> Sent!</span>
+                        </button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out through any of these platforms. I'm always open to new opportunities and collaborations.</p>
+                        <div class="contact-links">
+                            <a href="mailto:kyawlaymyint@icloud.com" class="contact-link" aria-label="Send email">
+                                <i class="fas fa-envelope"></i>
+                                <span>kyawlaymyint@icloud.com</span>
+                            </a>
+                            <a href="https://github.com/John-myint" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.facebook.com/kyawlay.myint.12" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://x.com/KyawLayMyint1" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+                                <i class="fab fa-x-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://t.me/king_alexander94" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
         <div class="section-container">
-            <p>&copy; 2026 Kyaw Lay Myint. All rights reserved. | Built with <span style="color: #ffd700;">♡</span> and code</p>
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 class="footer-logo">KLM</h3>
+                    <p>Full-Stack Developer building elegant web solutions with modern technologies.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://github.com/John-myint" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/kyawlay.myint.12" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/KyawLayMyint1" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://t.me/king_alexander94" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kyaw Lay Myint. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
